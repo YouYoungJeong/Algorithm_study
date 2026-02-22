@@ -38,3 +38,43 @@ print(int(a) ** int(b))
 # 2개의 실수(f1, f2)가 공백으로 구분되어 입력된다.
 f1, f2 = input().split()
 print(float(f1) ** float(f2))
+
+# 정수 2개(a, b) 를 입력받아 a를 b로 나눈 몫을 출력해보자.
+# 2개의 정수(a, b)가 공백으로 구분되어 입력된다.
+a, b = input().split()
+print(int(a) // int(b))
+
+# 정수 2개(a, b) 를 입력받아 a를 b로 나눈 나머지를 출력해보자.
+# 2개의 정수(a, b)가 공백으로 구분되어 입력된다.
+a, b = input().split()
+print(int(a) % int(b))
+
+
+# 실수 1개를 입력받아 소숫점 이하 두 번째 자리까지의 정확도로 반올림한 값을 출력해보자.
+a = float(input())
+print(round(a, 2))
+
+# 실수 2개(f1, f2)를 입력받아 f1 을 f2 로 나눈 값을 출력해보자. 이 때 소숫점 넷째자리에서 반올림하여 무조건 소숫점 셋째 자리까지 출력한다.
+# 2개의 실수(f1, f2)가 공백으로 구분되어 입력된다.
+f1, f2 = input().split()
+divf=float(f1) / float(f2)
+print(round(divf,3))
+print(format(divf,'.3f'))
+
+# 정수 2개(a, b)를 입력받아 합, 차, 곱, 몫, 나머지, 나눈 값을 자동으로 계산해보자.단, b는 0이 아니다.
+# 정수 2개가 공백을 두고 입력된다.
+a, b = input().split()
+a = int(a); b = int(b)
+print(a + b)
+print(a - b)
+print(a * b)
+print(a // b)
+print(a % b)
+print(format(a / b,'.2f'))
+
+#6045 - 정수 3개를 입력받아 합과 평균을 출력해보자.
+# 정수 3개가 공백을 두고 입력된다.
+a, b, c = input().split()
+a = int(a); b = int(b); c = int(c)
+print(a+b+c, end=" ")
+print(format((a+ b+ c)/3, '.2f'))
